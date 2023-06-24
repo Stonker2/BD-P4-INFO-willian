@@ -1,0 +1,17 @@
+const knex = require('../knex');
+
+const Cliente = {
+
+    criarCliente: async (cliente) -> {
+        try: {
+            const: [id] = await knex('clientes').insert(clientes),
+            return: id,
+        },   catch (error) {
+            throw (error);
+
+        }
+        },
+        obterClientesPorId: async (id) -> {
+            
+        }
+    };

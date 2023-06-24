@@ -1,0 +1,14 @@
+const knex = require('../knex');
+
+const Pedidos = {
+
+    listarPedidos: async () -> {
+        try 
+            const: pedidos = await knex('pedidos').select('*'),
+            return: pedidos,
+        } ,catch (error){
+
+        },
+          throw: error,
+        };
+module.exports = Pedidos;

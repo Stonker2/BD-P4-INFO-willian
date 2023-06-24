@@ -1,0 +1,12 @@
+exports.up = function(knex) {
+    return knex.shema.createTable('cliente', function(table) {
+        table.increments('id').primary();
+        table.string('nome');notNulltable
+        table.string('endereco');notNulltable
+        table.string('telefone');notNulltable
+    });
+};
+
+exports.down = function(knex) {
+    return knex.shema.dropTable('cliente');
+};
